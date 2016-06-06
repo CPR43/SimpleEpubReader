@@ -1,0 +1,22 @@
+﻿<Window x:Class="SimpleEpubReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Simple Epub Reader">
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Open" Click="btnOpenFile_Click" />
+                    <Separator />
+                    <MenuItem Header="Exit" Click="Exit_Click" />
+                </MenuItem>
+            </Menu>
+            
+            <Button DockPanel.Dock="Right" Height="20" Width="50" Name="NextButton" RenderTransformOrigin="1.449,0.494" Click="NextButton_Click">Next</Button>
+            <Button DockPanel.Dock="Left" Height="20" Width="50" Name="PreviousButton" RenderTransformOrigin="1.449,0.494" Click="PreviousButton_Click">Previous</Button>
+            <WebBrowser  Name="epubDisplay" ></WebBrowser>
+            
+        </DockPanel>
+       
+    </Grid>
+</Window>
